@@ -27,33 +27,48 @@ a {
 .header-nav-item:not(:last-child) {
   margin-right: 30px;
 }
+.header__1,
+.nav {
+  display: none;
+}
 /*ホーム1*/
 .home__1--img {
   position: relative;
+  /*
   background: url(../img/mv.jpg) no-repeat center/cover;
   margin-left: 8%;
+  */
+}
+.home__1--img img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
 }
 .home__1--content {
   position: absolute;
-  top: 44%;
-  left: 42%;
+  top: 50%;
+  left: 41%;
   text-align: center;
   font-size: 60px;
   color: #fff;
 }
 /*ホーム2*/
 .home__2 {
-  margin: 30px 20px 30px 220px;
+  margin: 60px 60px 60px 60px;
 }
 input {
-  width: 1200px;
+  width: 1800px;
   height: 50px;
   border: 2px solid #dcdcdc;
+  margin: 20px 0px 20px 0px;
 }
 textarea {
-  width: 1200px;
+  width: 1800px;
   height: 300px;
   border: 2px solid #dcdcdc;
+  margin-top: 20px;
 }
 .label span:nth-child(1),
 .label span:nth-child(2),
@@ -77,6 +92,7 @@ textarea {
   background-color: #fff;
   border: 2px solid #000;
   width: 250px;
+  border-radius: 10px;
 }
 .error_message::before {
   content: "";
@@ -101,19 +117,19 @@ textarea {
   width: 25px;
 }
 /*ボタン*/
-.home__8--btn {
+.btn_submit {
   display: block;
   width: 400px;
-  margin: 30px 30px 30px 400px;
-  padding: 15px;
+  margin: 30px 30px 30px 640px;
+  padding: 10px;
   text-align: center;
   text-decoration: none;
   background: #000;
   color: #fff;
-  font-size: 23px;
+  font-size: 20px;
   font-weight: bold;
 }
-.home__8--btn:hover {
+.btn_submit:hover {
   /*
   background: #000;
   color: #fff;
@@ -161,16 +177,31 @@ a {
 }
 /*レスポンシブデザイン*/
 @media screen and (max-width: 768px) {
+  .header {
+    display: none;
+  }
   a {
     text-decoration: none;
+    color: rgb(12, 15, 231);
+  }
+  .header__1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0 30px;
+    background-color: #fff;
     color: #000;
   }
   .nav {
+    display: flex;
+    justify-content: space-between;
     position: absolute;
     height: 100vh;
     width: 100%;
     left: -100%;
-    background: #eee;
+    background: #000;
+    color: #000;
     transition: 0.7s;
     text-align: center;
   }
@@ -182,25 +213,30 @@ a {
     margin-top: 50px;
   }
   .menu {
+    /*
     visibility: visible;
+    */
     display: inline-block;
     width: 36px;
     height: 32px;
     cursor: pointer;
     position: relative;
     left: 20px;
+    /*
     top: 20px;
+    */
   }
   .menu__line--top,
   .menu__line--middle,
   .menu__line--bottom {
+    /*
     visibility: visible;
+    */
     display: inline-block;
     width: 100%;
     height: 4px;
-    /*
     background-color: #000;
-    */
+    color: #000;
     position: absolute;
     transition: 0.5s;
   }
@@ -227,35 +263,162 @@ a {
   .in {
     transform: translateX(100%);
   }
-  /*PC版*/
+  /*ホーム1*/
+.home__1--img {
+  position: relative;
+  /*
+  background: url(../img/mv.jpg) no-repeat center/cover;
+  margin-left: 8%;
+  */
+}
+.home__1--img img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+.home__1--content {
+  position: absolute;
+  top: 54%;
+  left: 26%;
+  text-align: center;
+  font-size: 60px;
+  color: #fff;
+}
+/*ホーム2*/
+.home__2 {
+  margin: 60px 60px 60px 60px;
+}
+input {
+  width: 620px;
+  height: 50px;
+  border: 2px solid #dcdcdc;
+  margin: 20px 20px 20px 20px;
+}
+textarea {
+  width: 620px;
+  height: 300px;
+  border: 2px solid #dcdcdc;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.label span:nth-child(1),
+.label span:nth-child(2),
+.label span:nth-child(3),
+.label span:nth-child(4) {
+  color: #ff0000;
+}
+.label {
+  font-size: 23px;
+  font-weight: bold;
+  padding: 10px;
+}
+.error_message {
+  position: relative;
+  font-size: 15px;
+  font-weight: bold;
+  color: #000;
+  display: block;
+  margin: 0;
+  padding: 20px;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 10px;
+  width: 250px;
+}
+.error_message::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: -10px;
+  display: block;
+  width: 0;
+  height: 0;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #000;
+  border-left: 8px solid transparent;
+}
+.logo_word {
+  background-color: #ffa500;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  display: inline-block;
+  margin: 0;
+  width: 25px;
+}
+/*ボタン*/
+.btn_submit {
+  display: block;
+  width: 200px;
+  margin: 30px 30px 30px 210px;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  background: #000;
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+}
+.btn_submit:hover {
+  /*
+  background: #000;
+  color: #fff;
+  */
+  color: #00bfff;
+}
+  /*サイトフッター*/
   a {
     text-decoration: none;
     color: inherit;
   }
-  .header {
-    visibility: hidden;
+  .footer {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  .footer-inner {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    height: 70px;
-    padding: 0 30px;
-    background-color: #fff;
-    color: #000;
+    padding: 0 20px;
   }
-  .header-ttl {
-    font-size: 24px;
-    width: 70px;
+  .footer-ttl {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 110px;
+    margin-left: 50px;
+    margin-bottom: 10px;
   }
-  .header-ttl img {
-    width: 100%;
-    height: auto;
-  }
-  .header-nav-list {
-    visibility: hidden;
+  .footer-nav-list {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     font-weight: bold;
+    width: 100%;
+    /*
+    justify-content: center;
+    */
+    font-size: 14px;
+    margin-right: 100px;
+    margin-bottom: 10px;
+    padding: 50px;
+    /*
+    text-decoration: none;
+    */
   }
-  .header-nav-item:not(:last-child) {
-    margin-right: 30px;
+  .footer-nav-item {
+    padding: 2px;
+  }
+  /*
+  .footer-nav-item:not(:last-child) {
+    margin-right: 20px;
+  }
+  .footer-nav-item {
+    border-right: 1px solid #fff;
+    padding-right: 2px;
   }
 }

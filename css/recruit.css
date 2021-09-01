@@ -27,16 +27,29 @@ a {
 .header-nav-item:not(:last-child) {
   margin-right: 30px;
 }
+.header__1,
+.nav {
+  display: none;
+}
 /*ホーム1*/
 .home__1--img {
   position: relative;
+  /*
   background: url(../img/mv.jpg) no-repeat center/cover;
   margin-left: 13%;
+*/
+}
+.home__1--img img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
 }
 .home__1--content {
   position: absolute;
-  top: 44.5%;
-  left: 42.5%;
+  top: 55%;
+  left: 43%;
   text-align: center;
   font-size: 60px;
   color: #fff;
@@ -158,16 +171,31 @@ a {
 }
 /*レスポンシブデザイン*/
 @media screen and (max-width: 768px) {
+  .header {
+    display: none;
+  }
   a {
     text-decoration: none;
+    color: rgb(12, 15, 231);
+  }
+  .header__1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0 30px;
+    background-color: #fff;
     color: #000;
   }
   .nav {
+    display: flex;
+    justify-content: space-between;
     position: absolute;
     height: 100vh;
     width: 100%;
     left: -100%;
-    background: #eee;
+    background: #000;
+    color: #000;
     transition: 0.7s;
     text-align: center;
   }
@@ -179,25 +207,30 @@ a {
     margin-top: 50px;
   }
   .menu {
+    /*
     visibility: visible;
+    */
     display: inline-block;
     width: 36px;
     height: 32px;
     cursor: pointer;
     position: relative;
     left: 20px;
+    /*
     top: 20px;
+    */
   }
   .menu__line--top,
   .menu__line--middle,
   .menu__line--bottom {
+    /*
     visibility: visible;
+    */
     display: inline-block;
     width: 100%;
     height: 4px;
-    /*
     background-color: #000;
-    */
+    color: #000;
     position: absolute;
     transition: 0.5s;
   }
@@ -224,35 +257,126 @@ a {
   .in {
     transform: translateX(100%);
   }
-  /*PC版*/
+  /*ホーム1*/
+  .home__1--img {
+    position: relative;
+    /*
+  background: url(../img/mv.jpg) no-repeat center/cover;
+  margin-left: 13%;
+*/
+  }
+  .home__1--img img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+  }
+  .home__1--content {
+    position: absolute;
+    top: 55%;
+    left: 34%;
+    text-align: center;
+    font-size: 60px;
+    color: #fff;
+  }
+
+  /*ホーム2*/
+  .home__2 {
+    margin-top: 30px;
+  }
+  .home__2--ttl1,
+  .home__2--ttl2 {
+    margin-left: 150px;
+    padding: 20px;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 150%;
+    border-bottom: 1px solid #000;
+    width: 60%;
+  }
+  .home__2--content1,
+  .home__2--content2 {
+    margin-left: 150px;
+    margin-right: 100px;
+    padding: 5px;
+    color: #000;
+    font-size: 25px;
+    line-height: 150%;
+    margin-bottom: 30px;
+  }
+  .home__2--content2 {
+    margin-bottom: 30px;
+  }
+  table {
+    width: 60%;
+    border-collapse: collapse;
+    margin: 0px auto;
+    margin-bottom: 60px;
+  }
+  table th,
+  table td {
+    border: 1px solid #000;
+    padding: 20px;
+    color: #000;
+    font-size: 25px;
+  }
+  table th {
+    font-weight: bold;
+    background-color: #f5f5f5;
+  }
+  /*サイトフッター*/
   a {
     text-decoration: none;
     color: inherit;
   }
-  .header {
-    visibility: hidden;
+  .footer {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  .footer-inner {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    height: 70px;
-    padding: 0 30px;
-    background-color: #fff;
-    color: #000;
+    padding: 0 20px;
   }
-  .header-ttl {
-    font-size: 24px;
-    width: 70px;
+  .footer-ttl {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 110px;
+    margin-left: 50px;
+    margin-bottom: 10px;
   }
-  .header-ttl img {
-    width: 100%;
-    height: auto;
-  }
-  .header-nav-list {
-    visibility: hidden;
+  .footer-nav-list {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     font-weight: bold;
+    width: 100%;
+    /*
+    justify-content: center;
+    */
+    font-size: 14px;
+    margin-right: 100px;
+    margin-bottom: 10px;
+    padding: 50px;
+    /*
+    text-decoration: none;
+    */
   }
-  .header-nav-item:not(:last-child) {
-    margin-right: 30px;
+  .footer-nav-item {
+    padding: 2px;
   }
+  /*
+  .footer-nav-item:not(:last-child) {
+    margin-right: 20px;
+  }
+  .footer-nav-item {
+    border-right: 1px solid #fff;
+    padding-right: 2px;
+  }
+  */
 }

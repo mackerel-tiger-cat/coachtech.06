@@ -27,15 +27,28 @@ a {
 .header-nav-item:not(:last-child) {
   margin-right: 30px;
 }
+.header__1,
+.nav {
+  display: none;
+}
 /*ホーム1*/
 .home__1--img {
   position: relative;
+  /*
   background: url(../img/mv.jpg) no-repeat center/cover;
   margin-left: 13%;
+*/
+}
+.home__1--img img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
 }
 .home__1--content {
   position: absolute;
-  top: 44%;
+  top: 52%;
   left: 42%;
   text-align: center;
   font-size: 60px;
@@ -47,7 +60,7 @@ a {
   display: flex;
   justify-content: center;
   margin-top: 30px;
-  margin-left: 180px;
+  margin-left: 100px;
   margin-right: 80px;
 }
 .home__5--content1,
@@ -67,6 +80,12 @@ a {
   font-size: 23px;
   font-weight: bold;
 }
+.home__5--1,
+.home__5--2,
+.home__5--3 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
 .home__5--img {
   width: 80%;
   height: auto;
@@ -76,7 +95,7 @@ a {
   height: auto;
 }
 .home__5--img:hover {
-  color: rgba(0, 191, 255, 0.35);
+  color: rgba(255, 255, 255, 0.8);
 }
 /*ホーム3*/
 .home__8 {
@@ -156,16 +175,31 @@ a {
 }
 /*レスポンシブデザイン*/
 @media screen and (max-width: 768px) {
+  .header {
+    display: none;
+  }
   a {
     text-decoration: none;
+    color: rgb(12, 15, 231);
+  }
+  .header__1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0 30px;
+    background-color: #fff;
     color: #000;
   }
   .nav {
+    display: flex;
+    justify-content: space-between;
     position: absolute;
     height: 100vh;
     width: 100%;
     left: -100%;
-    background: #eee;
+    background: #000;
+    color: #000;
     transition: 0.7s;
     text-align: center;
   }
@@ -177,25 +211,30 @@ a {
     margin-top: 50px;
   }
   .menu {
+    /*
     visibility: visible;
+    */
     display: inline-block;
     width: 36px;
     height: 32px;
     cursor: pointer;
     position: relative;
     left: 20px;
+    /*
     top: 20px;
+    */
   }
   .menu__line--top,
   .menu__line--middle,
   .menu__line--bottom {
+    /*
     visibility: visible;
+    */
     display: inline-block;
     width: 100%;
     height: 4px;
-    /*
     background-color: #000;
-    */
+    color: #000;
     position: absolute;
     transition: 0.5s;
   }
@@ -222,35 +261,130 @@ a {
   .in {
     transform: translateX(100%);
   }
-  /*PC版*/
+  /*ホーム1*/
+  .home__1--img {
+    position: relative;
+    /*
+  background: url(../img/mv.jpg) no-repeat center/cover;
+  margin-left: 13%;
+*/
+  }
+  .home__1--img img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+  }
+  .home__1--content {
+    position: absolute;
+    top: 52%;
+    left: 32%;
+    text-align: center;
+    font-size: 60px;
+    color: #fff;
+  }
+  /*ホーム2*/
+  .home__content1,
+  .home__content2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*
+  justify-content: center;
+  */
+    margin-top: 120px;
+    margin-left: 90px;
+    margin-right: 80px;
+  }
+  .home__content2 {
+    margin-top: -6px;
+  }
+  .home__5--content1,
+  .home__5--content2,
+  .home__5--content3 {
+    padding: 10px;
+    line-height: 120%;
+  }
+  .home__5--ttl1,
+  .home__5--ttl2,
+  .home__5--ttl3 {
+    font-size: 18px;
+  }
+  .home__5--subttl1,
+  .home__5--subttl2,
+  .home__5--subttl3 {
+    font-size: 23px;
+    font-weight: bold;
+  }
+  .home__5--1,
+  .home__5--2,
+  .home__5--3 {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .home__5--img {
+    width: 80%;
+    height: auto;
+  }
+  .home__5--img img {
+    width: 100%;
+    height: auto;
+  }
+  .home__5--img:hover {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  /*サイトフッター*/
   a {
     text-decoration: none;
     color: inherit;
   }
-  .header {
-    visibility: hidden;
+  .footer {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  .footer-inner {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    height: 70px;
-    padding: 0 30px;
-    background-color: #fff;
-    color: #000;
+    padding: 0 20px;
   }
-  .header-ttl {
-    font-size: 24px;
-    width: 70px;
+  .footer-ttl {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 110px;
+    margin-left: 50px;
+    margin-bottom: 10px;
   }
-  .header-ttl img {
-    width: 100%;
-    height: auto;
-  }
-  .header-nav-list {
-    visibility: hidden;
+  .footer-nav-list {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     font-weight: bold;
+    width: 100%;
+    /*
+    justify-content: center;
+    */
+    font-size: 14px;
+    margin-right: 100px;
+    margin-bottom: 10px;
+    padding: 50px;
+    /*
+    text-decoration: none;
+    */
   }
-  .header-nav-item:not(:last-child) {
-    margin-right: 30px;
+  .footer-nav-item {
+    padding: 2px;
   }
+  /*
+  .footer-nav-item:not(:last-child) {
+    margin-right: 20px;
+  }
+  .footer-nav-item {
+    border-right: 1px solid #fff;
+    padding-right: 2px;
+  }
+  */
 }

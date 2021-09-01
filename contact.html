@@ -30,6 +30,8 @@
   </nav>
 </header>
 <!--レスポンシブデザイン用ナビ-->
+<header class="header__1">
+  <h1 href="index.html" class="header-ttl"><img src="img/logo.png" alt=""></h1>
 <nav class="nav" id="nav">
   <ul>
     <li><a href="#">ホーム</a></li>
@@ -46,6 +48,7 @@
   <span class="menu__line--middle"></span>
   <span class="menu__line--bottom"></span>
 </div>
+</header>
 <!--ホーム1-->
 <div class="home__1">
   <div class="home__1--img"><img src="img/mv.png" alt=""></div>
@@ -56,24 +59,23 @@
 <!--ホーム2-->
 <div class="home__2">
 <form action="//www-creators.com/rsc/receiver.php" method="post">
-  <label class="label" for="company-name">会社名<span>*</span></label>
-  <input id="company-name" type="text" name="company-name">
+  <label class="label" for="company_name">会社名<span>*</span></label>
+    <input id="company_name" type="text" name="company_name" required placeholder="">
+      <span id="company_name_error" class="error_message"><span class="logo_word">!</span>このフィールドを入力して下さい</span>
   <label class="label" for="name">お名前<span>*</span></label>
-  <input id="name" type="name" name="name">
-  <label class="label" for="e-mail">メールアドレス<span>*</span></label>
-  <input id="e-mail" type="email" name="email">
-  <label class="label" for="message">お問い合わせ内容<span>*</span></label>
-  <textarea rows="4" id="message" placeholder="" name="comment"></textarea>
-  <span class="error_message"><span class="logo_word">!</span>このフィールドを入力して下さい</span>
+    <input id="username" type="username" name="username" required placeholder="">
+      <span id="username_error" class="error_message"><span class="logo_word">!</span>このフィールドを入力して下さい</span>
+  <label class="label" for="e_mail">メールアドレス<span>*</span></label>
+    <input id="e_mail" type="email" name="email" required placeholder="">
+      <span id="mailaddress_error" class="error_message"><span class="logo_word">!</span>このフィールドを入力して下さい</span>
+  <label class="label" for="comment">お問い合わせ内容<span>*</span></label>
+  <textarea rows="4" id="comment" name="comment" required placeholder=""></textarea>
+      <span id="comment_error" class="error_message"><span class="logo_word">!</span>このフィールドを入力して下さい</span>
+  <!--ボタン-->
+  <div class="transmission">
+    <input class="btn_submit" id="btn_submit" type="submit" value="お申し込み">
+  </div>
 </form>
-<style>
-  label,
-  input[type=text] {
-    display: block;
-  }
-</style>
-<!--ボタン-->
-  <a href="contact.html" class="home__8--btn">お申し込み</a>
 </div>
 <!--フッター-->
 <footer class="footer">
