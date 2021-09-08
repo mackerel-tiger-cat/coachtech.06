@@ -1,4 +1,5 @@
 /*お問い合わせページ*/
+/*
 $(function(){
 	$('input:submit[id="btn_submit"]').click(function(){
 		if(!input_check()){
@@ -54,6 +55,7 @@ if (comment == "") {
 		result = false;
 return result;
 }
+*/
 // レスポンシブデザイン:ハンバーガーメニュー,ドロワーメニュー
 const target = document.getElementById("menu");
 target.addEventListener('click', () => {

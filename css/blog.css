@@ -55,47 +55,70 @@ a {
   color: #fff;
 }
 /*ホーム2*/
-.home__content1,
-.home__content2 {
+.home__2--content1,
+.home__2--content2 {
   display: flex;
   justify-content: center;
   margin-top: 30px;
   margin-left: 100px;
   margin-right: 80px;
 }
-.home__5--content1,
-.home__5--content2,
-.home__5--content3 {
+.home__2--inner1,
+.home__2--inner2,
+.home__2--inner3,
+.home__2--inner4,
+.home__2--inner5,
+.home__2--inner6 {
   padding: 10px;
   line-height: 120%;
 }
-.home__5--ttl1,
-.home__5--ttl2,
-.home__5--ttl3 {
+.home__2--ttl1,
+.home__2--ttl2,
+.home__2--ttl3,
+.home__2--ttl4,
+.home__2--ttl5,
+.home__2--ttl6 {
   font-size: 18px;
 }
-.home__5--subttl1,
-.home__5--subttl2,
-.home__5--subttl3 {
+.home__2--subttl1,
+.home__2--subttl2,
+.home__2--subttl3,
+.home__2--subttl4,
+.home__2--subttl5,
+.home__2--subttl6 {
   font-size: 23px;
   font-weight: bold;
 }
-.home__5--1,
-.home__5--2,
-.home__5--3 {
+.home__2--1,
+.home__2--2,
+.home__2--3,
+.home__2--4,
+.home__2--5,
+.home__2--6 {
   margin-left: 10px;
   margin-right: 10px;
 }
-.home__5--img {
-  width: 80%;
+.home__2--img1 {
+  width: 20%;
   height: auto;
 }
-.home__5--img img {
+.home__2--img2 {
+  width: 20%;
+  height: auto;
+}
+.home__2--img1 img {
   width: 100%;
   height: auto;
 }
-.home__5--img:hover {
-  color: rgba(255, 255, 255, 0.8);
+.home__2--img2 img {
+  width: 100%;
+  height: auto;
+}
+.home__2--img1:hover {
+  color: rgba(250, 253, 253, 0.8);
+}
+.home__2--img2:hover {
+  color: rgba(250, 253, 253, 0.8);
 }
 /*ホーム3*/
 .home__8 {
@@ -285,54 +308,71 @@ a {
     color: #fff;
   }
   /*ホーム2*/
-  .home__content1,
-  .home__content2 {
+  .home__2--content1,
+  .home__2--content2 {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    /*
-  justify-content: center;
-  */
-    margin-top: 120px;
-    margin-left: 90px;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: 100px;
     margin-right: 80px;
   }
-  .home__content2 {
-    margin-top: -6px;
-  }
-  .home__5--content1,
-  .home__5--content2,
-  .home__5--content3 {
+  .home__2--inner1,
+  .home__2--inner2,
+  .home__2--inner3,
+  .home__2--inner4,
+  .home__2--inner5,
+  .home__2--inner6 {
     padding: 10px;
     line-height: 120%;
   }
-  .home__5--ttl1,
-  .home__5--ttl2,
-  .home__5--ttl3 {
+  .home__2--ttl1,
+  .home__2--ttl2,
+  .home__2--ttl3,
+  .home__2--ttl4,
+  .home__2--ttl5,
+  .home__2--ttl6 {
     font-size: 18px;
   }
-  .home__5--subttl1,
-  .home__5--subttl2,
-  .home__5--subttl3 {
+  .home__2--subttl1,
+  .home__2--subttl2,
+  .home__2--subttl3,
+  .home__2--subttl4,
+  .home__2--subttl5,
+  .home__2--subttl6 {
     font-size: 23px;
     font-weight: bold;
   }
-  .home__5--1,
-  .home__5--2,
-  .home__5--3 {
+  .home__2--1,
+  .home__2--2,
+  .home__2--3,
+  .home__2--4,
+  .home__2--5,
+  .home__2--6 {
     margin-left: 10px;
     margin-right: 10px;
   }
-  .home__5--img {
-    width: 80%;
-    height: auto;
-  }
-  .home__5--img img {
+  .home__2--img1 {
     width: 100%;
     height: auto;
   }
-  .home__5--img:hover {
-    color: rgba(255, 255, 255, 0.8);
+  .home__2--img2 {
+    width: 100%;
+    height: auto;
+  }
+  .home__2--img1 img {
+    width: 100%;
+    height: auto;
+  }
+  .home__2--img2 img {
+    width: 100%;
+    height: auto;
+  }
+  .home__2--img1:hover {
+    color: rgba(250, 253, 253, 0.8);
+  }
+  .home__2--img2:hover {
+    color: rgba(250, 253, 253, 0.8);
   }
   /*サイトフッター*/
   a {
@@ -370,10 +410,10 @@ a {
     font-size: 14px;
     margin-right: 100px;
     margin-bottom: 10px;
-    padding: 50px;
     /*
-    text-decoration: none;
+    padding: 50px;
     */
+    text-decoration: none;
   }
   .footer-nav-item {
     padding: 2px;

@@ -314,6 +314,7 @@ textarea {
   font-weight: bold;
   padding: 10px;
 }
+/*
 .error_message {
   position: relative;
   font-size: 15px;
@@ -327,6 +328,7 @@ textarea {
   border-radius: 10px;
   width: 250px;
 }
+*/
 .error_message::before {
   content: "";
   position: absolute;
@@ -405,10 +407,10 @@ textarea {
     font-size: 14px;
     margin-right: 100px;
     margin-bottom: 10px;
-    padding: 50px;
     /*
-    text-decoration: none;
+    padding: 50px;
     */
+    text-decoration: none;
   }
   .footer-nav-item {
     padding: 2px;

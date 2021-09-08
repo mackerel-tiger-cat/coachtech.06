@@ -334,10 +334,10 @@ a {
     font-size: 14px;
     margin-right: 100px;
     margin-bottom: 10px;
-    padding: 50px;
     /*
-    text-decoration: none;
+    padding: 50px;
     */
+    text-decoration: none;
   }
   .footer-nav-item {
     padding: 2px;
