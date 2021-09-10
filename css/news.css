@@ -341,6 +341,7 @@ a {
   }
   .footer-nav-item {
     padding: 2px;
+    border: none;
   }
   /*
   .footer-nav-item:not(:last-child) {

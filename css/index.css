@@ -375,6 +375,9 @@ a {
   color: #fff;
   font-size: 25px;
 }
+.home__7--btn1:hover {
+  color: rgba(0, 191, 255, 0.35);
+}
 .home__7--backgroundcolor2 {
   width: 50%;
   height: 300px;
@@ -385,7 +388,7 @@ a {
   color: none;
 }
 .home__7--backgroundcolor2:hover {
-  color: rgba(0, 191, 255, 0.35);
+  color: rgba(62, 138, 163, 0.35);
 }
 .home__7--btn2 {
   position: absolute;
@@ -393,6 +396,9 @@ a {
   left: 36%;
   color: #fff;
   font-size: 25px;
+}
+.home__7--btn2:hover {
+  color: rgba(62, 138, 163, 0.35);
 }
 /*ホーム8*/
 .home__8 {
@@ -982,6 +988,7 @@ a {
   }
   .footer-nav-item {
     padding: 2px;
+    border: none;
   }
   /*
   .footer-nav-item:not(:last-child) {
