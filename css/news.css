@@ -164,18 +164,18 @@ a {
   .header {
     display: none;
   }
-  a {
-    text-decoration: none;
-    color: rgb(12, 15, 231);
-  }
   .header__1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 70px;
+    height: auto;
     padding: 10px 30px;
     background-color: #fff;
     color: #000;
+  }
+  a {
+    text-decoration: none;
+    color: rgb(12, 15, 231);
   }
   .nav {
     display: flex;
@@ -184,17 +184,34 @@ a {
     height: 100vh;
     width: 100%;
     left: -100%;
-    background: #000;
+    background: #fff;
     color: #000;
     transition: 0.7s;
     text-align: center;
   }
-  .nav ul {
-    padding-top: 80px;
+  /*
+  .nav ul
+  */
+  .header-nav-list--1 {
+    padding-top: 30px;
+    margin: 0px auto;
+    width: 300px;
+    height: auto;
+    /*
+    font-size: 15px;
+    font-weight: bold;
+    color: #000;
+    */
   }
-  .nav ul li {
+  /*
+  .nav ul li
+  */
+  .header-nav-item--1 {
     list-style-type: none;
     margin-top: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
   }
   .menu {
     /*
@@ -206,6 +223,8 @@ a {
     cursor: pointer;
     position: relative;
     left: 20px;
+    /*
+    margin-right: 60px;
     /*
     top: 20px;
     */
@@ -250,11 +269,12 @@ a {
   /*ホーム1*/
   .home__1--img {
     position: relative;
+    background: url(../img/mv.jpg) no-repeat center/cover;
     /*
-  background: url(../img/mv.jpg) no-repeat center/cover;
-  margin-left: 8%;
-  */
+    margin-left: 8%;
+    */
   }
+  /*
   .home__1--img img {
     background-repeat: no-repeat;
     background-size: cover;
@@ -262,6 +282,7 @@ a {
     width: 100%;
     height: 100vh;
   }
+  */
   .home__1--content {
     position: absolute;
     top: 54%;
