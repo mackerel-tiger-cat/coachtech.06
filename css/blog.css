@@ -197,6 +197,207 @@ a {
   padding-right: 2px;
 }
 /*レスポンシブデザイン*/
+@media screen and (max-width: 1000px) {
+  /*固定ヘッダー*/
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0 30px;
+    background-color: #fff;
+    color: #000;
+  }
+  .header-ttl {
+    font-size: 24px;
+    width: 70px;
+  }
+  .header-ttl img {
+    width: 100%;
+    height: auto;
+  }
+  .header-nav-list {
+    display: flex;
+    font-weight: bold;
+  }
+  .header-nav-item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .header__1,
+  .nav {
+    display: none;
+  }
+  /*ホーム1*/
+  .home__1--img {
+    position: relative;
+    /*
+  background: url(../img/mv.jpg) no-repeat center/cover;
+  margin-left: 13%;
+*/
+  }
+  .home__1--img img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+  }
+  .home__1--content {
+    position: absolute;
+    top: 53%;
+    left: 36%;
+    text-align: center;
+    font-size: 60px;
+    color: #fff;
+  }
+  /*ホーム2*/
+  .home__2--content1,
+  .home__2--content2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: 80px;
+  }
+  .home__2--inner1,
+  .home__2--inner2,
+  .home__2--inner3,
+  .home__2--inner4,
+  .home__2--inner5,
+  .home__2--inner6 {
+    padding: 10px;
+    line-height: 120%;
+  }
+  .home__2--ttl1,
+  .home__2--ttl2,
+  .home__2--ttl3,
+  .home__2--ttl4,
+  .home__2--ttl5,
+  .home__2--ttl6 {
+    font-size: 18px;
+  }
+  .home__2--subttl1,
+  .home__2--subttl2,
+  .home__2--subttl3,
+  .home__2--subttl4,
+  .home__2--subttl5,
+  .home__2--subttl6 {
+    font-size: 23px;
+    font-weight: bold;
+  }
+  .home__2--1,
+  .home__2--2,
+  .home__2--3,
+  .home__2--4,
+  .home__2--5,
+  .home__2--6 {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .home__2--img1 {
+    width: 20%;
+    height: auto;
+  }
+  .home__2--img2 {
+    width: 20%;
+    height: auto;
+  }
+  .home__2--img1 img {
+    width: 100%;
+    height: auto;
+  }
+  .home__2--img2 img {
+    width: 100%;
+    height: auto;
+  }
+  .home__2--img1:hover {
+    color: rgba(250, 253, 253, 0.8);
+  }
+  .home__2--img2:hover {
+    color: rgba(250, 253, 253, 0.8);
+  }
+  /*ホーム3*/
+  .home__8 {
+    background-color: #f5f5f5;
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    padding-bottom: 10px;
+  }
+  .home__8--content {
+    text-align: center;
+    color: #000;
+    line-height: 120%;
+  }
+  .home__8--ttl {
+    padding: 50px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  .home__8--subttl {
+    font-size: 23px;
+  }
+  /*ボタン*/
+  .home__8--btn {
+    display: block;
+    width: 400px;
+    margin: 30px auto;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    background: #ff0000;
+    color: #fff;
+    font-size: 23px;
+    font-weight: bold;
+  }
+  .home__8--btn:hover {
+    color: rgba(0, 191, 255, 0.35);
+  }
+  /*サイトフッター*/
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .footer {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  .footer-ttl {
+    font-size: 14px;
+    text-align: center;
+    margin-left: 50px;
+    margin-bottom: 10px;
+  }
+  .footer-nav-list {
+    display: flex;
+    font-weight: bold;
+    width: 100%;
+    justify-content: center;
+    font-size: 14px;
+    margin-right: 100px;
+    margin-bottom: 10px;
+  }
+  .footer-nav-item:not(:last-child) {
+    margin-right: 20px;
+  }
+  .footer-nav-item {
+    border-right: 1px solid #fff;
+    padding-right: 2px;
+  }
+}
+/*レスポンシブデザイン*/
 @media screen and (max-width: 768px) {
   .header {
     display: none;
@@ -236,8 +437,8 @@ a {
   }
   .header-nav-item--1 {
     list-style-type: none;
-    margin-top: 50px;
-    font-size: 30px;
+    margin-top: 30px;
+    font-size: 20px;
     font-weight: bold;
     color: #0000ff;
   }
@@ -303,9 +504,9 @@ a {
   .home__1--content {
     position: absolute;
     top: 52%;
-    left: 32%;
+    left: 33.5%;
     text-align: center;
-    font-size: 60px;
+    font-size: 30px;
     color: #fff;
   }
   /*ホーム2*/
@@ -318,6 +519,11 @@ a {
     margin-left: 100px;
     margin-right: 80px;
   }
+  .home__2--content2 {
+    margin-top: -3px;
+    margin-bottom: -80px;
+  }
+  ]
   .home__2--inner1,
   .home__2--inner2,
   .home__2--inner3,
@@ -333,7 +539,7 @@ a {
   .home__2--ttl4,
   .home__2--ttl5,
   .home__2--ttl6 {
-    font-size: 18px;
+    font-size: 14px;
   }
   .home__2--subttl1,
   .home__2--subttl2,
@@ -341,7 +547,7 @@ a {
   .home__2--subttl4,
   .home__2--subttl5,
   .home__2--subttl6 {
-    font-size: 23px;
+    font-size: 18px;
     font-weight: bold;
   }
   .home__2--1,
@@ -375,6 +581,43 @@ a {
   .home__2--img2:hover {
     color: rgba(250, 253, 253, 0.8);
   }
+  /*ホーム3*/
+  .home__8 {
+    background-color: #f5f5f5;
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    padding-bottom: 10px;
+  }
+  .home__8--content {
+    text-align: center;
+    color: #000;
+    line-height: 120%;
+  }
+  .home__8--ttl {
+    padding: 50px;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .home__8--subttl {
+    font-size: 16px;
+  }
+  /*ボタン*/
+  .home__8--btn {
+    display: block;
+    width: 150px;
+    margin: 30px auto;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    background: #ff0000;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .home__8--btn:hover {
+    color: rgba(0, 191, 255, 0.35);
+  }
   /*サイトフッター*/
   a {
     text-decoration: none;
@@ -395,7 +638,7 @@ a {
   .footer-ttl {
     font-size: 14px;
     text-align: center;
-    margin-top: 110px;
+    margin-top: 95px;
     margin-left: 50px;
     margin-bottom: 10px;
   }
@@ -408,7 +651,7 @@ a {
     /*
     justify-content: center;
     */
-    font-size: 14px;
+    font-size: 12px;
     margin-right: 100px;
     margin-bottom: 10px;
     /*
