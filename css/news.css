@@ -60,7 +60,7 @@ a {
   /*
   position: relative;
   */
-  width: 50%;
+  width: 90%;
   margin: 0px auto;
   color: black;
   line-height: 150%;
@@ -73,14 +73,15 @@ a {
 }
 */
 .list_news-wrap {
-  margin-top: 120px;
+  margin-top: 100px;
 }
 .list_news {
   border: solid 2px #000;
   margin-bottom: 15px;
-  font-size: 23px;
+  font-size: 14px;
   font-weight: bold;
-  text-align: center;
+  text-align: left;
+  padding: 10px;
 }
 /*ホーム3*/
 .home__8 {
@@ -293,11 +294,11 @@ a {
   }
   .list_news {
     border: solid 2px #000;
-    margin-bottom: 30px;
-    padding: 10px;
+    margin-bottom: 15px;
     font-size: 14px;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
+    padding: 10px;
   }
   /*ホーム3*/
   .home__8 {
@@ -483,7 +484,7 @@ a {
   */
   .home__1--content {
     position: absolute;
-    top: 53.5%;
+    top: 56.5%;
     left: 35.5%;
     text-align: center;
     font-size: 30px;
