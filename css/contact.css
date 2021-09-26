@@ -48,8 +48,8 @@ a {
 }
 .home__1--content {
   position: absolute;
-  top: 50%;
-  left: 41%;
+  top: 52%;
+  left: 38.5%;
   text-align: center;
   font-size: 60px;
   color: #fff;
@@ -59,13 +59,13 @@ a {
   margin: 60px 60px 60px 60px;
 }
 input {
-  width: 1800px;
+  width: 1675px;
   height: 50px;
   border: 2px solid #dcdcdc;
   margin: 20px 0px 20px 0px;
 }
 textarea {
-  width: 1800px;
+  width: 1675px;
   height: 300px;
   border: 2px solid #dcdcdc;
   margin-top: 20px;
@@ -128,14 +128,16 @@ textarea {
   color: #fff;
   font-size: 20px;
   font-weight: bold;
+  cursor: pointer;
 }
+/*
 .btn_submit:hover {
-  /*
   background: #000;
   color: #fff;
-  */
   color: #00bfff;
 }
+*/
+
 /*サイトフッター*/
 a {
   text-decoration: none;
@@ -174,6 +176,10 @@ a {
 .footer-nav-item {
   border-right: 1px solid #fff;
   padding-right: 2px;
+  cursor: pointer;
+}
+.footer-nav-item:hover {
+  color: rgba(255, 255, 255, 0.7);
 }
 /*レスポンシブデザイン*/
 @media screen and (max-width: 1000px) {
@@ -263,149 +269,151 @@ a {
   .in {
     transform: translateX(100%);
   }
-/*ホーム1*/
-.home__1--img {
-  position: relative;
-  /*
+  /*ホーム1*/
+  .home__1--img {
+    position: relative;
+    /*
   background: url(../img/mv.jpg) no-repeat center/cover;
   margin-left: 8%;
   */
-}
-.home__1--img img {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 100vh;
-}
-.home__1--content {
-  position: absolute;
-  top: 52%;
-  left: 40%;
-  text-align: center;
-  font-size: 30px;
-  color: #fff;
-}
-/*ホーム2*/
-.home__2 {
-  margin: 60px 60px 60px 60px;
-}
-input {
-  width: 875px;
-  height: 50px;
-  border: 2px solid #dcdcdc;
-  margin: 20px 0px 20px 0px;
-}
-textarea {
-  width: 875px;
-  height: 300px;
-  border: 2px solid #dcdcdc;
-  margin-top: 20px;
-}
-.label span:nth-child(1),
-.label span:nth-child(2),
-.label span:nth-child(3),
-.label span:nth-child(4) {
-  color: #ff0000;
-}
-.label {
-  font-size: 23px;
-  font-weight: bold;
-  padding: 10px;
-}
-.error_message {
-  position: relative;
-  font-size: 15px;
-  font-weight: bold;
-  color: #000;
-  display: block;
-  margin: 0;
-  padding: 20px;
-  background-color: #fff;
-  border: 2px solid #000;
-  width: 250px;
-  border-radius: 10px;
-}
-.error_message::before {
-  content: "";
-  position: absolute;
-  left: 10px;
-  top: -10px;
-  display: block;
-  width: 0;
-  height: 0;
-  border-right: 8px solid transparent;
-  border-bottom: 8px solid #000;
-  border-left: 8px solid transparent;
-}
-.logo_word {
-  background-color: #ffa500;
-  font-size: 15px;
-  font-weight: bold;
-  text-align: center;
-  color: #fff;
-  display: inline-block;
-  margin: 0;
-  width: 25px;
-}
-/*ボタン*/
-.btn_submit {
-  display: block;
-  width: 200px;
-  margin: 30px 30px 30px 340px;
-  padding: 10px;
-  text-align: center;
-  text-decoration: none;
-  background: #000;
-  color: #fff;
-  font-size: 20px;
-  font-weight: bold;
-}
-.btn_submit:hover {
+  }
+  .home__1--img img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+  }
+  .home__1--content {
+    position: absolute;
+    top: 52%;
+    left: 40%;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+  }
+  /*ホーム2*/
+  .home__2 {
+    margin: 60px 60px 60px 60px;
+  }
+  input {
+    width: 875px;
+    height: 50px;
+    border: 2px solid #dcdcdc;
+    margin: 20px 0px 20px 0px;
+  }
+  textarea {
+    width: 875px;
+    height: 300px;
+    border: 2px solid #dcdcdc;
+    margin-top: 20px;
+  }
+  .label span:nth-child(1),
+  .label span:nth-child(2),
+  .label span:nth-child(3),
+  .label span:nth-child(4) {
+    color: #ff0000;
+  }
+  .label {
+    font-size: 23px;
+    font-weight: bold;
+    padding: 10px;
+  }
+  .error_message {
+    position: relative;
+    font-size: 15px;
+    font-weight: bold;
+    color: #000;
+    display: block;
+    margin: 0;
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #000;
+    width: 250px;
+    border-radius: 10px;
+  }
+  .error_message::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: -10px;
+    display: block;
+    width: 0;
+    height: 0;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #000;
+    border-left: 8px solid transparent;
+  }
+  .logo_word {
+    background-color: #ffa500;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    display: inline-block;
+    margin: 0;
+    width: 25px;
+  }
+  /*ボタン*/
+  .btn_submit {
+    display: block;
+    width: 200px;
+    margin: 30px 30px 30px 340px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    background: #000;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
   /*
+.btn_submit:hover {
   background: #000;
   color: #fff;
-  */
   color: #00bfff;
 }
-/*サイトフッター*/
-a {
-  text-decoration: none;
-  color: inherit;
-}
-.footer {
-  width: 100%;
-  background-color: #000;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
-}
-.footer-inner {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 20px;
-}
-.footer-ttl {
-  font-size: 14px;
-  text-align: center;
-  margin-left: 50px;
-  margin-bottom: 10px;
-}
-.footer-nav-list {
-  display: flex;
-  font-weight: bold;
-  width: 100%;
-  justify-content: center;
-  font-size: 14px;
-  margin-right: 100px;
-  margin-bottom: 10px;
-}
-.footer-nav-item:not(:last-child) {
-  margin-right: 20px;
-}
-.footer-nav-item {
-  border-right: 1px solid #fff;
-  padding-right: 2px;
+  */
+  /*サイトフッター*/
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .footer {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  .footer-ttl {
+    font-size: 14px;
+    text-align: center;
+    margin-left: 50px;
+    margin-bottom: 10px;
+  }
+  .footer-nav-list {
+    display: flex;
+    font-weight: bold;
+    width: 100%;
+    justify-content: center;
+    font-size: 14px;
+    margin-right: 100px;
+    margin-bottom: 10px;
+  }
+  .footer-nav-item:not(:last-child) {
+    margin-right: 20px;
+  }
+  .footer-nav-item {
+    border-right: 1px solid #fff;
+    padding-right: 2px;
+  }
 }
 /*レスポンシブデザイン*/
 @media screen and (max-width: 768px) {
@@ -496,18 +504,18 @@ a {
     transform: translateX(100%);
   }
   /*ホーム1*/
-.home__1 {
+  .home__1 {
     background: url(../img/mv.jpg) no-repeat center/cover;
-}
-.home__1--img {
-  position: relative;
-}
-/*
+  }
+  .home__1--img {
+    position: relative;
+  }
+  /*
   background: url(../img/mv.jpg) no-repeat center/cover;
   margin-left: 8%;
 }
 */
-/*
+  /*
 .home__1--img img {
   background-repeat: no-repeat;
   background-size: cover;
@@ -516,43 +524,43 @@ a {
   height: 100vh;
 }
 */
-.home__1--content {
-  position: absolute;
-  top: 54%;
-  left: 26%;
-  text-align: center;
-  font-size: 35px;
-  color: #fff;
-}
-/*ホーム2*/
-.home__2 {
-  margin: 60px 60px 60px 60px;
-}
-input {
-  width: 240px;
-  height: 35px;
-  border: 2px solid #dcdcdc;
-  margin: 20px 20px 20px 20px;
-}
-textarea {
-  width: 240px;
-  height: 150px;
-  border: 2px solid #dcdcdc;
-  margin-top: 15px;
-  margin-left: 20px;
-}
-.label span:nth-child(1),
-.label span:nth-child(2),
-.label span:nth-child(3),
-.label span:nth-child(4) {
-  color: #ff0000;
-}
-.label {
-  font-size: 15px;
-  font-weight: bold;
-  padding: 10px;
-}
-/*
+  .home__1--content {
+    position: absolute;
+    top: 54%;
+    left: 26%;
+    text-align: center;
+    font-size: 35px;
+    color: #fff;
+  }
+  /*ホーム2*/
+  .home__2 {
+    margin: 60px 60px 60px 60px;
+  }
+  input {
+    width: 240px;
+    height: 35px;
+    border: 2px solid #dcdcdc;
+    margin: 20px 20px 20px 20px;
+  }
+  textarea {
+    width: 240px;
+    height: 150px;
+    border: 2px solid #dcdcdc;
+    margin-top: 15px;
+    margin-left: 20px;
+  }
+  .label span:nth-child(1),
+  .label span:nth-child(2),
+  .label span:nth-child(3),
+  .label span:nth-child(4) {
+    color: #ff0000;
+  }
+  .label {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+  }
+  /*
 .error_message {
   position: relative;
   font-size: 15px;
@@ -567,48 +575,49 @@ textarea {
   width: 250px;
 }
 */
-.error_message::before {
-  content: "";
-  position: absolute;
-  left: 10px;
-  top: -10px;
-  display: block;
-  width: 0;
-  height: 0;
-  border-right: 8px solid transparent;
-  border-bottom: 8px solid #000;
-  border-left: 8px solid transparent;
-}
-.logo_word {
-  background-color: #ffa500;
-  font-size: 15px;
-  font-weight: bold;
-  text-align: center;
-  color: #fff;
-  display: inline-block;
-  margin: 0;
-  width: 25px;
-}
-/*ボタン*/
-.btn_submit {
-  display: block;
-  width: 100px;
-  margin: 30px 30px 30px 90px;
-  padding: 10px;
-  text-align: center;
-  text-decoration: none;
-  background: #000;
-  color: #fff;
-  font-size: 10px;
-  font-weight: bold;
-}
-.btn_submit:hover {
+  .error_message::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: -10px;
+    display: block;
+    width: 0;
+    height: 0;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #000;
+    border-left: 8px solid transparent;
+  }
+  .logo_word {
+    background-color: #ffa500;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    display: inline-block;
+    margin: 0;
+    width: 25px;
+  }
+  /*ボタン*/
+  .btn_submit {
+    display: block;
+    width: 100px;
+    margin: 30px 30px 30px 90px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    background: #000;
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
+  }
   /*
+.btn_submit:hover {
   background: #000;
   color: #fff;
-  */
   color: #00bfff;
-}
+  }
+*/
   /*サイトフッター*/
   a {
     text-decoration: none;
@@ -662,4 +671,5 @@ textarea {
     border-right: 1px solid #fff;
     padding-right: 2px;
   }
+  */
 }
